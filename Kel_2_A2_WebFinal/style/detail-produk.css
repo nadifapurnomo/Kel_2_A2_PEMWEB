@@ -1,0 +1,158 @@
+/* import font dari google */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+/* default style */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* global font */
+html, body{
+    font-family: 'Roboto', sans-serif;
+}
+
+/* produk div style */
+.product-div img{
+    width: 100%;
+    display: block;
+}
+
+/* Main Wrapper Styles */
+.main-wrapper{
+    min-height: 100vh;
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Container Styles */
+.container{
+    max-width: 1200px;
+    padding: 0 1rem;
+    margin: 0 auto;
+}
+/* Product Div Styles */
+.product-div{
+    margin-top: 3rem;
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    background-color: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 15px;
+    column-gap: 10px;
+    align-items: center;
+    color: #ffffff;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+.product-div-left{
+    padding: 20px;
+}
+.product-div-right{
+    padding: 20px;
+    padding-right: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+/* Image Container Styles */
+.img-container img{
+    width: 250px;
+    margin: 0 auto;
+}
+
+/* Active State Styles */
+.active{
+    border-color: rgb(255, 145, 163)!important;
+}
+
+/* Product Right Section Styles */
+.product-div-right span{
+    display: block;
+    color: var(--blue);
+    
+}
+.product-name{
+    font-size: 26px;
+    margin-bottom: 24px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.product-price{
+    font-weight: 700;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+/* Product Kategori and Stock Styles */
+.product-kategori{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+.product-stock{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Product Description Styles */
+.product-description{
+    line-height: 1.5;
+    font-weight: 500;
+    margin: 10px 0 15px 0;
+    display: flex;
+    justify-content: left;
+    padding: 8px 0;
+}
+
+/* Button Styles */
+.product-div-right .btn-produk {
+    cursor: pointer;
+    border: 1px solid transparent;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: #eeeeee;
+    background: #212529;
+    text-align: center;
+}
+
+.product-div-right .btn-produk:hover {
+    color: rgb(48, 175, 175);
+    background: rgba(255, 255, 255, 0.3);
+    border: 1px solid rgb(48, 175, 175);
+}
+
+/* Media Query for Responsive Design */
+@media screen and (max-width: 992px){
+    .product-div{
+        grid-template-columns: 100%;
+    }
+    .product-div-right{
+        text-align: center;
+    }
+    .product-kategori{
+        justify-content: center;
+    }
+    .product-description{
+        max-width: 400px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width: 400px){
+    .btn-groups button{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

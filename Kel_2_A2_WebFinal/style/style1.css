@@ -1,0 +1,695 @@
+/* Variabel warna  */
+:root {
+    --blue:#012039;
+    --primary-color: #cadbfd;
+    --secondary--color: #fff;
+    --text-color: #121212;
+}
+
+/* warna untuk mode gelap */
+.dark-theme {
+    --blue:#f8fafc;
+    --primary-color: #314264;
+    --secondary--color: #fcfdfe;
+    --text-color: #01193a;
+}
+
+/* style global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+
+/* mengatur font base dan smooth scrolling */
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
+
+/* padding untuk section */
+section {
+    padding: 2rem 9%;
+}
+
+/* style untuk heading */
+.heading {
+    text-align: center;
+    font-size: 4rem;
+    /* color: #FFBA00; */
+    padding: 1rem;
+    margin: 2rem 0;
+    background-color: var(--secondary--color);
+    margin-bottom: 30px;
+    border-radius: 5rem;
+}
+
+/* style untuk text heading */
+.heading span {
+    color: var(--text-color);
+
+}
+
+/* style untuk class button (tombol) */
+.btn {
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background: var(--secondary--color);
+    color: var(--blue);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+
+/* animasi class button (tombol) */
+.btn:hover {
+    background: rgb(224, 238, 255);
+    color: var(--blue);
+}
+
+/* style untuk class button-back (tombol) */
+.btn-back {
+    background-color: #ffc801;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* animasi class button-back (tombol) */
+a.btn-back{
+    text-decoration: none;
+}
+
+.btn-back:hover {
+    background-color: rgb(48, 175, 175);
+}
+
+/* style untuk header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: var(--secondary--color);
+    padding: 2rem 9%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+/* style bagian logo pada header */
+header .logo {
+    font-size: 3rem;
+    color: #044478;
+    font-weight: bolder;
+}
+
+header .logo span {
+    color: #044478;
+}
+
+/* style untuk navbar */
+header .navbar a {
+    font-size: 2rem;
+    padding: 0 1.5rem;
+    color: #3e3c46;
+}
+
+/* animasi untuk navbar */
+header .navbar a:hover {
+    color: #044478;
+}
+
+/* toggle button di header */
+header .mode img {
+    width: 40px;
+}
+
+header #toggler {
+    display: none;
+}
+
+/* style menu icon */
+header .fa-bars {
+    font-size: 3rem;
+    color: #0c0172;
+    border-radius: .5rem;
+    padding: .5rem 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+/* style bagian home */
+.home {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    background: var(--primary-color);
+    background-size: cover;
+    background-position: center;
+}
+
+/* content di dalam home */
+.home .contents {
+    max-width: 50rem;
+}
+
+.home .contents a{
+    color: var(--text-color);
+}
+
+/* heading bagian home */
+.home .contents h3 {
+    font-size: 5rem;
+    color: var(--blue);
+}
+
+/* text dibagian home */
+.home .contents span {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+
+/* style foto pada bagian home */
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* style untuk about us */
+.about {
+    background: var(--primary-color);
+}
+
+/* layout about us */
+.aboutUs {
+    display: flex;
+    align-items: center;
+}
+
+/* style foto di bagian about us */
+.image {
+    flex: 1;
+    padding: 10px;
+    min-width: 100px;
+}
+
+.image img {
+    width: 120%;
+    min-width: 115px;
+    min-height: auto;
+}
+
+/* style bagian box deskripsi di about us*/
+.description-box {
+    flex: 2;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    margin: 0 auto; 
+    margin-left: 40px;
+}
+
+/* style text di bagian deskripsi */
+.description {
+    padding: 10px;
+}
+
+/* style judul dibagian deskripsi */
+.title {
+    font-weight: bold;
+    color: var(--blue);
+    text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
+    margin-top: 10px;
+    margin: 2rem 0;
+}
+
+/* style container felx layout */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+    align-items: center; 
+}
+
+/* style untuk masing masing container */
+.item {
+    width: calc(30% - 40px);
+    margin: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* responsive layout untuk layar kecil */
+@media screen and (max-width: 600px) {
+    .item {
+        width: calc(50% - 20px);
+    }
+}
+
+/* responsive layout untuk layar sedang */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .item {
+        width: calc(33.33% - 26.66px);
+    }
+}
+
+/* responsive untuk layar besar */
+@media screen and (min-width: 901px) {
+    .item {
+        width: calc(30% - 40px);
+    }
+}
+
+/* animasi item */
+.item:hover {
+    transform: scale(1.05);
+}
+
+/* responsive foto */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* style untuk texy paragraf */
+p {
+    margin: 1px 0;
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+/* style untuk service (layanan)*/
+.layanan {
+    padding: 5rem;
+    background-color: var(--primary-color);
+}
+
+/* style masing masing box pada bagian service (layanan) */
+.box {
+    width: calc(30% - 40px);
+    margin: 10px;
+    background-color: #7a9ef9;
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* style untuk font di dalam box */
+.box p {
+    display: inline-block;
+    background-color: rgb(203, 242, 255);
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* animasi untuk bagian box */
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* responsive untuk layar kecil */
+@media screen and (max-width: 600px) {
+    .box {
+        width: calc(50% - 20px);
+    }
+}
+
+/* responsive untuk layar sedang */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .box {
+        width: calc(33.33% - 26.66px);
+    }
+}
+
+/* responsive untuk layar besar */
+@media screen and (min-width: 901px) {
+    .box {
+        width: calc(30% - 40px);
+    }
+}
+
+/* style untuk footer */
+
+.footer {
+    background: var(--secondary--color);
+}
+
+/* style untuk box container pada footer */
+.footer .box-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* style untuk masing masing box pada footer */
+.footer .box-container .box-footer {
+    flex: 1 1 25rem;
+}
+
+/* style untuk box pada heading footer */
+.footer .box-container .box-footer h3 {
+    color: var(--text-color);
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+/* style untuk link footer */
+.footer .box-container .box-footer a {
+    display: block;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+
+/* animasi untuk link footer */
+.footer .box-container .box-footer a:hover {
+    color: #044478;
+
+}
+
+/* style untuk footer credits */
+.footer .credit {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 1.5rem;
+    padding-top: 2.5rem;
+    font-size: 1.5rem;
+    color: var(--text-color);
+    border-top: 0.2rem solid var(--text-color);
+}
+
+/* media queries untuk responsive */
+@media (max-width:991px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2 rem;
+    }
+
+}
+
+@media (max-width:768px) {
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+
+    header .navbar {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        left: 0;
+        background: var(--secondary--color);
+        border-top: .1rem solid var(--primary-color);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header #toggler:checked~.navbar {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header .navbar a {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        background: var(--secondary--color);
+        border: .1rem solid var(--text-color);
+        display: block;
+    }
+
+    header .logo{
+        top : 30%;
+        left: 30%;
+    }
+    
+}   
+
+@media (max-width:450px) {
+    img {
+        max-width: 70%;
+        height: auto;
+    }
+
+    html {
+        font-size: 30%;
+    }
+    .heading {
+        font-size: 3rem;
+    }
+
+    .home .images img{
+
+        width: 1000px;
+    }
+}
+
+/* style animasi bubble */
+.segitiga-bergerak div {
+    width: 30px; 
+    height: 30px; 
+    background-color: var(--secondary--color);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* pergerakan animasi pertama dst */
+.segitiga-bergerak div:nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: mymove 15s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: mymove 12s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(3) {
+  top: 17%;
+  left: 6%;
+  animation: mymove 7s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(4) {
+  top: 40%;
+  left: 40%;
+  animation: mymove 10s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(5) {
+  top: 80%;
+  left: 30%;
+  animation: mymove 14s linear infinite;;
+}
+
+.segitiga-bergerak div:nth-child(6) {
+  top: 50%;
+  left: 70%;
+  animation: mymove 8s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(7) {
+  top: 10%;
+  left: 80%;
+  animation: mymove 11s linear infinite;;
+}
+
+.segitiga-bergerak div:nth-child(8) {
+  top: 20%;
+  left: 20%;
+  animation: mymove 13s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(9) {
+  top: 70%;
+  left: 90%;
+  animation: mymove 14s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(10) {
+  top: 30%;
+  left: 10%;
+  animation: mymove 14s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(11) {
+  top: 65%;
+  left: 60%;
+  animation: mymove 9s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(12) {
+  top: 35%;
+  left: 25%;
+  animation: mymove 7s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(13) {
+  top: 50%;
+  left: 80%;
+  animation: mymove 8s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(14) {
+  top: 40%;
+  left: 55%;
+  animation: mymove 10s linear infinite;
+}
+
+.segitiga-bergerak div:nth-child(15) {
+  top: 15%;
+  left: 70%;
+  animation: mymove 13s linear infinite;
+}
+.segitiga-bergerak div:nth-child(16) {
+    top: 55%;
+    left: 30%;
+    animation: mymove 13s linear infinite;
+  }
+
+
+/*  animasi gerak */
+@keyframes mymove {
+    0% {
+      transform: scale(0) translateY(0) rotate(0);
+      opacity: 1;
+    }
+    20% {
+      transform: scale(1.2) translateY(-30px) rotate(72deg);
+      opacity: 0.4;
+    }
+    40% {
+      transform: scale(0.8) translateY(-60px) rotate(144deg);
+      opacity: 0.2;
+    }
+    60% {
+      transform: scale(1.2) translateY(-90px) rotate(216deg);
+      opacity: 0.2;
+    }
+    80% {
+      transform: scale(0.8) translateY(-120px) rotate(288deg);
+      opacity: 0.2;
+    }
+    100% {
+      transform: scale(1.5) translateY(-150px) rotate(360deg);
+      opacity: 0;
+    }
+  }
+
+/* Tambahan gaya untuk elemen-elemen berikutnya dalam halaman */
+h1 {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 10px;
+    color: var(--blue);
+    font-size: 45px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+section.base div {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #ffc801;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: rgb(48, 175, 175);
+}
+
+/* Media queries untuk tata letak responsif form */
+@media (max-width: 768px) {
+    form {
+        width: 80%;
+    }
+}
+
+@media (max-width: 450px) {
+    form {
+        width: 60%;
+    }
+}
+
+

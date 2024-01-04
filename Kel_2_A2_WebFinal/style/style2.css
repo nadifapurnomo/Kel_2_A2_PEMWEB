@@ -1,0 +1,220 @@
+/* Gaya default untuk semua elemen dengan bobot font 400 */
+* {
+    font-weight: 400;
+
+}
+/* Gaya untuk elemen menu-item */
+.menu-item {
+    display: flex;
+    align-items: center;
+}
+/* Gaya untuk teks navigasi pada tema gelap saat dihover */
+.dark-theme .nav_teks:hover {
+    color: black;
+    background-color: white;
+    border-radius: 35px;
+    transition: color 300ms ease-in-out;
+}
+/* Gaya untuk teks navigasi saat dihover */
+.nav_teks:hover {
+    color: white;
+    background-color: black;
+    border-radius: 35px;
+    transition: color 300ms ease-in-out;
+}
+
+/* Gaya untuk teks tambahan saat dihover */
+.tambah_teks:hover {
+    color: rgb(0, 0, 0);
+    transition: color 300ms ease-in-out;
+}
+
+/* Gaya untuk tombol */
+.btn-a {
+    display: inline-block;
+    margin-top: 2rem;
+    border-radius: 5rem;
+    background: var(--secondary--color);
+    color: var(--blue);
+    padding: .9rem 3.5rem;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+/* Gaya untuk tombol saat dihover */
+.btn-a:hover {
+    background-color: rgb(48, 175, 175);
+    color: var(--blue);
+}
+/* Gaya untuk elemen daftar menu */
+.menu-item li {
+    margin: 0 0.5rem;
+    padding: 0 0.5rem;
+    border-radius: 20px;
+}
+
+/* Gaya untuk elemen daftar menu saat dihover */
+.menu-item li:hover {
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+/* Gaya untuk teks dalam elemen daftar menu */
+.menu-item li a {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--blue);
+}
+/* Gaya untuk teks dalam elemen daftar menu saat dihover */
+.menu-item li a:hover {
+    color: white;
+    transition: color 300ms ease-in-out;
+}
+/* Variabel warna root */
+:root {
+    --blue:#012039;
+    --primary-color: #cadbfd;
+    --secondary--color: #fff;
+    --text-color: #121212;
+}
+/* Gaya default untuk body */
+body{
+    background-color: var(--primary-color);;
+    color: var(--blue);
+}
+
+/* Gaya default untuk tabel */
+table {
+    border: 1px solid var(--blue);
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 80%;
+    margin: 10px auto;
+}
+/* Gaya untuk header tabel */
+table thead th {
+    background-color: rgb(255, 183, 0);
+    border: 2px solid var(--blue);
+    color: #ffffff;
+    padding: 20px;
+    text-align: left;
+    font-size: 15px;
+}
+/* Gaya untuk sel dalam tubuh tabel */
+table tbody td {
+    border: 2px solid var(--blue);
+    color: var(--blue);
+    padding: 10px;
+    font-size: 15px;
+}
+/* Gaya untuk tautan dalam tubuh tabel */
+table tbody a {
+    background-color: rgb(255, 183, 0);
+    color: #ffffff;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* Gaya untuk tautan dalam tubuh tabel saat dihover */
+table tbody a:hover {
+    color: rgb(0, 0, 0);
+    transition: color 300ms ease-in-out;
+}
+
+/* Gaya untuk baris genap dalam tubuh tabel */
+tbody tr:nth-child(even) {
+    background-color: rgb(48, 175, 175);
+}
+/* Gaya untuk baris dalam tubuh tabel saat dihover */
+tbody tr:hover {
+    background-color: rgb(72, 131, 151);
+}
+/* Gaya untuk teks tambahan */
+.tambah_teks {
+    background-color: rgb(255, 183, 0);
+    color: #ffff;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    border: 1px solid;   
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+/* Gaya untuk teks navigasi */
+.nav_teks {
+    color: black;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+    transform: scale(1.1);
+    transition: all 300ms ease-in-out;
+}
+
+/* Gaya untuk label */
+label {
+    margin-top: 10px;
+    float: left;
+    text-align: left;
+    width: 100%;
+}
+/* Gaya untuk elemen base */
+.base {
+    width: 400px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Gaya untuk tombol submit */
+button[type="submit"] {
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(255, 183, 0);
+    border: 1.5px solid #ccc;
+    outline-color: var(--blue);
+}
+/* Gaya untuk input teks */
+input[type="text"] {
+    padding: 6px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f8f8;
+    border: 1.5px solid #ccc;
+    outline-color: var(--blue);
+}
+/* Gaya untuk label */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+/* Gaya untuk tombol submit */
+button[type="submit"] {
+    margin-top: 10px;
+}
+/* Gaya untuk tombol kelola */
+.btn-kelola{
+    margin-top: 90px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 1px;
+}
+/* Gaya untuk tombol umum */
+button {
+    background-color: rgb(255, 183, 0);
+    color: var(--blue);
+    padding: 10px;
+    font-size: 12px;
+    border: 0;
+    margin: 5px;
+}
+/* Gaya untuk elemen tanggal */
+.tanggal {
+    margin-top: 20px;
+    margin-bottom: -100px;
+}
+/* Gaya untuk teks dalam elemen tanggal */
+.tanggal p {
+    color: var(--blue);
+}
